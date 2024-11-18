@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Tareas Pendientes</title>
+    <link rel="shortcut icon" href="./assets/img/Favicon-32x32.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div>
+            <h2>Todo List</h2>
+            <hr>
+            <p>Nueva tarea</p>
+        </div>
+
+        <div class="grilla-ingreso">
+            <form id="taskForm">
+                <input id="taskInput" type="text" placeholder="Ingresa una nueva tarea" required>
+                <button id="btnAgrega" type="submit">Agregar Tarea</button>
+            </form>
+        </div>
+
+    
+        <div>
+            <p>Total: <span id="totalTasks">0</span></p>
+            <p>Completadas: <span id="completedTasks">0</span></p>
+            <hr>
+        </div>
+
+    
+        <div class="encabezado-tareas">
+            <div class="color-encabezado">
+                <article>ID</article> 
+            </div>
+            <div class="color-encabezado">
+                <article>Nombre Tarea</article>       
+            </div>
+            <div class="color-encabezado">
+                <article>Completada</article> 
+            </div>
+            <div class="color-encabezado">
+                <article>Eliminar</article>       
+            </div>
+        </div>
+
+        <ul id="taskList" class="todo-list"></ul>
+    </div>
+
+    <script src="./assets/JS/control_tareas.js"></script>
+    
+</body>
+</html>
